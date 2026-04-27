@@ -1,20 +1,9 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+I built this adapter while poking around inside a friend’s GPIB‑to‑USB-and‑Ethernet adapters (UsbGpib v2 and GPIBee). The goal was simple: see what’s really happening on the GPIB bus without disturbing it.
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+The result is a fully transparent GPIB pass‑through that lets you tap every single bus line via pin headers making it easy to hook up a logic analyzer and start decoding traffic. It stays completely out of the signal path, so the device under test behaves as if nothing is there.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+For quick visual feedback, ATN and REN each get their own LED. The board needs an external 5 V supply for the LEDs.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+The GitHub repo includes everything you need to reproduce it: schematics, PCB files, and 3D‑printable STLs for a simple enclosure. There are caps to cover the exposed GPIB-connector-pins, to avoid accidental short circuits.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+A handy little tool for anyone debugging, reverse‑engineering, or just curious about what their GPIB hardware is really saying.
