@@ -10,6 +10,6 @@ If you want to build one yourself, some SMD‑soldering skills are required. Thi
 
 A handy little tool for debugging, reverse‑engineering, or just rediscovering what your GPIB gear has been doing all these years.
 
-This project on Hackaday.io: https://hackaday.io/project/205600-gpib-eavesdropper
+This project on Hackaday.io: https://hackaday.io/project/205600-gpib-tap
 More about UsbGpib v2 and GPIBee: https://github.com/xyphro/UsbGpib
 
